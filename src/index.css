@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 25% 27%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    /* Academic Professional Blue */
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Deep Academic Blue */
+    --primary-dark: 217 91% 35%;
+    --primary-dark-foreground: 0 0% 100%;
+
+    /* Light Academic Blue */
+    --secondary: 214 32% 91%;
+    --secondary-foreground: 215 25% 27%;
+
+    --muted: 215 16% 96%;
+    --muted-foreground: 215 13% 54%;
+
+    /* Success Accent */
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Warning for CTAs */
+    --warning: 35 91% 62%;
+    --warning-foreground: 215 25% 27%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 12% 91%;
+    --input: 215 12% 91%;
+    --ring: 214 84% 56%;
+
+    --radius: 0.75rem;
+
+    /* Custom Educational Tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(217 91% 35%), hsl(214 84% 56%));
+    --section-bg: 215 20% 98%;
+    --card-shadow: 0 4px 6px -1px hsl(215 25% 27% / 0.1);
+    --hover-shadow: 0 10px 15px -3px hsl(215 25% 27% / 0.1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 215 28% 17%;
+    --foreground: 0 0% 95%;
+
+    --card: 215 28% 17%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 215 28% 17%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+    
+    --primary-dark: 217 91% 35%;
+    --primary-dark-foreground: 0 0% 100%;
+
+    --secondary: 215 25% 27%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 215 25% 27%;
+    --muted-foreground: 215 13% 65%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    --warning: 35 91% 62%;
+    --warning-foreground: 215 25% 27%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 215 25% 27%;
+    --input: 215 25% 27%;
+    --ring: 214 84% 56%;
+
+    --section-bg: 215 28% 15%;
+    --card-shadow: 0 4px 6px -1px hsl(0 0% 0% / 0.3);
+    --hover-shadow: 0 10px 15px -3px hsl(0 0% 0% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
